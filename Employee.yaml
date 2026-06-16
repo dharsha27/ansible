@@ -1,0 +1,28 @@
+- name : "Harshavardhan"
+  company: "Infosys"
+  location: "Bangalore"
+  empid= "276490"
+  address:
+    - type : "Permanent"
+      street: "B.Pappuru"
+      Mandal: "Narpala"
+      District: "Anantapur"
+
+    - type: "Current"
+      street: "NarayanReddy Layout"
+      City: "Bangalore"
+
+
+- name : "Bhargav"
+  company: "Own car Driver"
+  location: "ATP"
+  empid= "535424"
+  address:
+    - type : "Permanent"
+      street: "B.Pappuru"
+      Mandal: "Narpala"
+      District: "Anantapur"
+
+    - type: "Current"
+      street: "Based on ride"
+      City: "Based on ride"      
