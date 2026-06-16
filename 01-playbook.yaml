@@ -1,5 +1,5 @@
 - name: connect the server
-  hosts: fronted
+  hosts: frontend
   tasks: #start the server
     - name: ping the server
       ping:
