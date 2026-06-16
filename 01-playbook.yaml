@@ -1,0 +1,6 @@
+- name: connect the server
+  hosts: fronted
+  tasks: #start the server
+    - name: ping the server
+      ping:
+
