@@ -1,0 +1,13 @@
+- name: demo on variables
+  hosts: localhost
+  connection: local
+  
+  vars:
+     Course: "DevSecOps"
+     Duration: "4-Months"
+     Trainer: "SivaKumar"
+
+  tasks:
+    debug:
+       
+       "Hey , I am practicing variables in ansible, "
