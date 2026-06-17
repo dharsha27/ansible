@@ -1,7 +1,6 @@
 - name: demo on variables
   hosts: local
   connection: local
-  vars:
   tasks:
    - name: printing variables
      debug:
