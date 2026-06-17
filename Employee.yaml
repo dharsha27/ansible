@@ -1,7 +1,7 @@
 - name : "Harshavardhan"
   company: "Infosys"
   location: "Bangalore"
-  empid= "276490"
+  empid: "276490"
   address:
     - type : "Permanent"
       street: "B.Pappuru"
@@ -16,7 +16,7 @@
 - name : "Bhargav"
   company: "Own car Driver"
   location: "ATP"
-  empid= "535424"
+  empid: "535424"
   address:
     - type : "Permanent"
       street: "B.Pappuru"
