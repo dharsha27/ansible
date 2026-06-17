@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-  - name: printing variables
-    debug:
+   - name: printing variables
+     debug:
         msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
