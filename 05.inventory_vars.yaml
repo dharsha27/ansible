@@ -1,9 +1,10 @@
 - name: demo on variables
   hosts: frontend
   tasks:
+
+   - name:
+     debug:msg: "Executing the Frontend module"
    - name: printing variables
-     debug:
-        msg: "Executing the Frontend module"
      debug:   
         msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
 
@@ -16,8 +17,9 @@
   hosts: local
   connection: local
   tasks:
-   - name: printing variables
+   - name:
      debug:
         msg: "Executing the local module"
+   - name: printing variables
      debug:   
         msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
