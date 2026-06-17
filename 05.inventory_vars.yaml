@@ -1,8 +1,8 @@
 - name: demo on variables
-  hosts: local
-  connection: local
-  vars_files:
-    - course.yaml
+  hosts: frontend
+  # connection: local
+  # vars_files:
+  #   - course.yaml
   tasks:
    - name: printing variables
      debug:
