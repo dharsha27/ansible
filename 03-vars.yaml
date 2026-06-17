@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars_files:
-     - course.yaml
+    - course.yaml
   tasks:
-   - name: printing variables
-     debug:
-       msg: "Hey , I am {{Course}} practicing variables in ansible, and the Duration is {{Duration}}, and trainer is {{Traines}}"
+    - name: printing variables
+      debug:
+        msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
