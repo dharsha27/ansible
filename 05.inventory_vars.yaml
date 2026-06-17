@@ -1,6 +1,8 @@
 - name: demo on variables
   hosts: local
   connection: local
+  vars_files:
+   - inventory.ini
   tasks:
    - name: printing variables
      debug:
