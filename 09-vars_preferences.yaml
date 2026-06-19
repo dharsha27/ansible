@@ -1,7 +1,7 @@
 - name: preferences on vars
   hosts: frontend
-  vars:
-    NAME: "Harsha"
+  # vars:
+  #   NAME: "Harsha"
   vars_files:
    - course.yaml
 
