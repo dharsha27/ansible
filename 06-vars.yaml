@@ -1,0 +1,11 @@
+- name: demo on variables
+  hosts: localhost
+  connection: local
+  vars_files:
+   - course.yaml
+  tasks:
+    - name: printing variables
+      # vars:
+      #    COURSE: "DevSecOps with AIOPS"
+      debug:
+        msg: "Hey, I am {{NAME}} , i ma  practicing  {{ COURSE }} course, and the Duration is {{ DURATION }}, and trainer is {{ TRAINER }}"
