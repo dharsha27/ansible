@@ -1,5 +1,5 @@
 - name: gathering fact info
-  hsots: frontend
+  hosts: frontend
   tasks:
    - name: print gathering facts
      debug:
