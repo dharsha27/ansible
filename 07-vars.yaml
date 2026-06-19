@@ -1,7 +1,6 @@
 - name: demo on variables
   hosts: frontend
- 
   tasks:
-    - name: printing variables
-      debug:
-        msg: "Hey, I am {{NAME}} , i ma  practicing  {{ COURSE }} course, and the Duration is {{ DURATION }}, and trainer is {{ TRAINER }}"
+   - name: printing information
+     debug:
+      msg: "Hey, I am {{NAME}} , i ma  practicing  {{ COURSE }} course, and the Duration is {{ DURATION }}, and trainer is {{ TRAINER }}"
