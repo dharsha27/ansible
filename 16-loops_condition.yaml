@@ -1,0 +1,16 @@
+- name: demo on loops
+  hosts: frontend
+  become: yes
+  tasks:
+   - name: install packages
+     package:
+       name:  "{{ item.name }}"
+       state:  "{{ item.state }}" 
+     loop:
+     - {name: "nginx", state: "present"}
+     - {name: "mysql", state: "absent"}
+     - {name: "git", state: "present"}
+     
+     
+
+   
