@@ -1,0 +1,20 @@
+- name: preferences on vars
+  hosts: frontend
+  vars:
+    NAME: "Harsha"
+  vars_files:
+   - course.yaml
+
+  vars_prompt:
+   - name: NAME
+     prompt: "Please enter your full name"
+     private: false
+
+  tasks:
+   - name: private vars preferences
+     vars:
+       NAME: "Harsha"
+     debug:
+       msg: "Hi , i am {{NAME}}"
+
+   
