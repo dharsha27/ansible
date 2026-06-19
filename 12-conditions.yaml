@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-      devops_live_sessions=7
+     devops_live_sessions : 7
   tasks:
    - name: devops session more than 5 
      debug:
