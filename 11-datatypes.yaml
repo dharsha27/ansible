@@ -1,0 +1,23 @@
+- name: Course Information
+  hosts: local
+  connection: local
+  vars:
+     course: "DEVOPS WITH AI" 
+     duration_in_hours: 150
+     is_live_session: true
+     topics:
+     - linux
+     - ansible
+     - terraform
+     more_details:
+       how_many_months: 4
+       trainer: "SivaKumar"
+  tasks:
+   - name: Print Information
+     debug:
+       msg: |
+         name: {{ course }}
+         duration: {{ duration_in_hours }}
+         live:  {{ is_live_session }}
+         topics: {{ topics }}
+         more_details: {{ more_details }}
