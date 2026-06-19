@@ -1,0 +1,14 @@
+- name: demo on loops
+  hosts: local
+  connection: local
+  tasks:
+   - name: print if its redhat dnf
+     debug:
+       msg:  "hi ra {{ item }} , how are you"
+     loop:
+     - harsha
+     - bhargav
+     - chari
+     - madhu
+
+   
