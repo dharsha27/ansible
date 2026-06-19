@@ -1,9 +1,13 @@
 - name: demo on variables
-  hosts: local
+  hosts: localhost
   connection: local
-  vars_files:
-    - course.yaml
+  vars:
+    Course: "DevSecOps" 
+    Duration: "4-Months"
+    Trainer: "SivaKumar"
   tasks:
     - name: printing variables
+      vars:
+         COURSE: "DevSecOps with AIOPS"
       debug:
         msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
