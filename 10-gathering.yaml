@@ -1,0 +1,6 @@
+- name: gathering fact info
+  hsots: frontend
+  tasks:
+   - name: print gathering facts
+     debug:
+       msg: "{{ansible_facts}}"
