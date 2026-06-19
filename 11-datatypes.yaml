@@ -15,9 +15,9 @@
   tasks:
    - name: Print Information
      debug:
-       msg: >
-         name: {{ course }}\n
-         duration: {{ duration_in_hours }}\n
-         live:  {{ is_live_session }}\n
-         topics: {{ topics }}\n
-         more_details: {{ more_details }}\n
+       msg: |
+         name: {{ course }}
+         duration: {{ duration_in_hours }}
+         live:  {{ is_live_session }}
+         topics: {{ topics }}
+         more_details: {{ more_details }}
