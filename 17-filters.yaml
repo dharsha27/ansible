@@ -23,7 +23,7 @@
     full_name: dasari harshavardhan 
     full_name1: DASARI HARSHAVARDHAN
 
-    ip_address: 1032.434.5.353
+    ip_address: 132.34.5.33
   tasks:
    - name: converting string to list   #converting string to list
      debug:
