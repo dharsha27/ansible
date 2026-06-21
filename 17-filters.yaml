@@ -20,20 +20,33 @@
             "value": "Development"
         }
     ]
-
+    full_name: dasari harshavardhan 
+    full_name1: DASARI HARSHAVARDHAN
   tasks:
-   - name: converting string to list
+   - name: converting string to list   #converting string to list
      debug:
        msg: "Topics are : {{ topics | split (',')  }}"
 
-   - name: set as a default values
+   - name: set as a default values    # setting as default value 
      debug:
        msg: "Hi  {{ GREETING | default ('hello , i am default to print this msg')  }}"
  
-   - name: convert to map to list
+   - name: convert to map to list   # coverting map to list
      debug:
        msg:  "{{ TagMap | dict2items }}"
 
-   - name: convert to list to map
+   - name: convert to list to map  # converting list to map
      debug:
        msg:  "{{ tagsList | items2dict }}"
+
+   - name: convert to uppercase
+     debug:
+       msg : "{{full_name | upper}} "
+
+   - name: convert to lowercase
+     debug:
+       msg : "{{full_name1 | lower}} "
+
+
+
+
