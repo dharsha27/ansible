@@ -10,4 +10,11 @@
    - name: converting string to list
      debug:
        msg: "Topics are : {{ topics | split (',')  }}"
+
+   - name: set as a default values
+     debug:
+       msg: "Hi  {{ GREETING | default ('hello , i am default to print this msg')  }}"
  
+   - name: convert to map to list
+     debug:
+       msg:  "{{ TagMap | dict2item }}"
