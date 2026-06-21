@@ -1,11 +1,11 @@
 - name: demo on shell command
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
-  - name: command test
-    shell: cat /etc/passwd |grep root
-    registers: users_output
+   - name: command test
+     shell: cat /etc/passwd |grep root
+     register: users_output
 
-  - name: print output
-    debug:
+   - name: print output
+     debug:
        msg: "{{ users_output }}"
