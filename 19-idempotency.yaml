@@ -1,14 +1,35 @@
-- name: create user 
-  hosts: localhost
-  connection: local
-  become: yes 
-  vars:
-     user_name: expense
-  tasks:
-    - name: user name is expense
-      user:
-        name: "{{ item }}"
-      loop:
+## creating the user once and creating a list as well as 
+
+# - name: create user 
+#   hosts: localhost
+#   connection: local
+#   become: yes 
+#   vars:
+#      user_name: expense
+#   tasks:
+#     - name: user name is expense
+#       user:
+#         name: "{{ item }}"
+#       loop:
+        # - harsha
+        # - bhargav
+        # - madhu
+        # - chari
+
+
+## Deleting the user 
+
+-  name: Removing the user 
+   hosts: local
+   connection: local
+   become: yes
+   ansible.builtin.user
+   tasks:
+     - name: removing the users
+       name: {{ item}}
+       state: absent
+       remove: true
+   loop:      
         - harsha
         - bhargav
         - madhu
