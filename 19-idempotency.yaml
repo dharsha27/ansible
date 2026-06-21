@@ -23,13 +23,13 @@
    hosts: local
    connection: local
    become: yes
-   ansible.builtin.user:
+  #  ansible.builtin.user:
    tasks:
      - name: removing the users
        name: "{{ item}}"
        state: absent
        remove: true
-   loop:      
+       loop:      
         - harsha
         - bhargav
         - madhu
