@@ -1,0 +1,10 @@
+- name: create user 
+  hosts: localhost
+  connection: local
+  become: yes 
+  vars:
+     user_name: expense
+  tasks:
+    - name: user name is expense
+      user:
+        name: "{{ user_name }}"
