@@ -8,3 +8,8 @@
     - name: user name is expense
       user:
         name: "{{ user_name }}"
+      loop:
+        - harsha
+        - bhargav
+        - madhu
+        - chari
