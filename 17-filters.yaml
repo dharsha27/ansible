@@ -6,3 +6,8 @@
        name: Ansible
        project: Roboshop
        environment: Development
+  tasks:
+   - name: converting string to list
+     debug:
+       msg: "Topics are : {{ topics | split (',')  }}"
+ 
