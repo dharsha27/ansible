@@ -22,6 +22,8 @@
     ]
     full_name: dasari harshavardhan 
     full_name1: DASARI HARSHAVARDHAN
+
+    ip_address: 1032.434.5.353
   tasks:
    - name: converting string to list   #converting string to list
      debug:
@@ -46,6 +48,13 @@
    - name: convert to lowercase
      debug:
        msg : "{{full_name1 | lower}} "
+
+   - name: validate ip address
+     debug:
+       msg : "{{ip_address ansible.utils.ipv4 }} "
+      
+   
+    
 
 
 
