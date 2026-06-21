@@ -2,9 +2,10 @@
   hosts: local
   connection: local
   tasks:
-   - name: command test
-     shell: cat /etc/passwd |grep root
-     registers: users_output
-   - name: print output
-     debug:
+  - name: command test
+    shell: cat /etc/passwd |grep root
+    registers: users_output
+
+  - name: print output
+    debug:
        msg: "{{ users_output }}"
