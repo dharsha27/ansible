@@ -8,4 +8,4 @@
       # vars:
       #    COURSE: "DevSecOps with AIOPS"
       debug:
-        msg: "Hey, I am {{NAME}} , i ma  practicing  {{ COURSE }} course, and the Duration is {{ DURATION }}, and trainer is {{ TRAINER }}"
+        msg: "Hey, I am {{NAME}} , i ma  practicing  {{ COURSE }} course, and the Duration is {{ DURATION }}, and trainer is {{ TRAINER }}, common_key:{{common_key}}"

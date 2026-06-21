@@ -3,7 +3,7 @@
   tasks:
    - name: printing variables
      debug:   
-        msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
+        msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }} , common_key:{{common_key}}"
 
 
 
@@ -16,4 +16,4 @@
   tasks:
    - name: printing variables
      debug:   
-        msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }}"
+        msg: "Hey, I am {{ Course }} practicing variables in ansible, and the Duration is {{ Duration }}, and trainer is {{ Trainer }} , common_key:{{common_key}}"

@@ -1,0 +1,8 @@
+- name: Demo on Functions
+  hosts: frontend
+  vars:
+    topics: Linux, Ansible, Terraform, Git, ShellScript
+    TagMap:
+       name: Ansible
+       project: Roboshop
+       environment: Development
