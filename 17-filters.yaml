@@ -51,7 +51,7 @@
 
    - name: validate ip address
      debug:
-       msg : "{{ip_address ansible.utils.ipv4 }} "
+       msg : "{{ip_address | ansible.utils.ipv4 }} "
       
    
     
