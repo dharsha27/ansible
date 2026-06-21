@@ -7,7 +7,7 @@
   tasks:
     - name: user name is expense
       user:
-        name: "{{ user_name }}"
+        name: "{{ item }}"
       loop:
         - harsha
         - bhargav
